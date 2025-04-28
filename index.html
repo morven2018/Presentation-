@@ -1,40 +1,151 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/league.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-image="https://img.freepik.com/free-photo/eye-futuristic-robot_53876-95096.jpg?t=st=1745801246~exp=1745804846~hmac=371e745fdc654cd11caa9d975919cf47cc9bedb98b22b0ca72e3079309334b73&w=1380"
+        >
+          <h2>OWASP Top 10 Security Risks</h2>
+        </section>
+        <section>
+          <h2>What is OWASP?</h2>
+          <p>
+            <em>The Open Worldwide Application Security Project (OWASP)</em>
+            is a nonprofit foundation that works to improve the security of
+            software.
+          </p>
+        </section>
+        <section>
+          <h2>Why do we need to know the OWASP Top 10?</h2>
+          <ul>
+            <li>
+              To prevent information security incidents with widespread
+              vulnerabilities
+            </li>
+            <li>To create more secure applications</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Broken Access Control</h2>
+          <ul>
+            Examples:
+            <li>Privilege escalation</li>
+            <li>Insecure Direct Object References (IDOR)</li>
+            <li>Bypassing role restrictions.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Cryptographic failures</h2>
+          <p>
+            Occurs due to insufficient protection of sensitive data during
+            transit and at rest.
+          </p>
+        </section>
+        <section>
+          <h2>Injection Attacks</h2>
+          <ul>
+            Types of injection attacks:
+            <li>SQL Injection</li>
+            <li>Command Injection</li>
+            <li>Cross-Site Scripting (XSS)</li>
+            <li>XML Injection</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Insecure Design</h2>
+          <ul>
+            Examples:
+            <li>Lack of input validation</li>
+            <li>Insufficient authentication and authorization</li>
+            <li>Bad session management</li>
+            <li>Incorrect error handling and logging</li>
+            <li>Insufficient data protection</li>
+            <li>Overly complex or unnecessary functions</li>
+            <li>Lack of security at all stages of development</li>
+            <li>Insufficient threat modeling</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Security Misconfigurations</h2>
+          <p>
+            Occurs when system or application settings are missing or
+            incorrectly implemented, which may allow unauthorized access.
+          </p>
+        </section>
+        <section>
+          <h2>Vulnerable and Outdated Components</h2>
+          <ul>
+            To protect the application:
+            <li>Regularly update the components and libraries used</li>
+            <li>Check for vulnerabilities in third-party components</li>
+            <li>Use version monitoring tools</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Identification and Authentication Failures</h2>
+          <ul>
+            To prevent failures, it is recommended:
+            <li>Implement multi-factor authentication</li>
+            <li>Limit the number of login attempts</li>
+            <li>Use strong encryption for session data</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Software and Data Integrity Failures</h2>
+          <p>
+            Result from application code and infrastructure that failed to
+            protect against integrity violations of data and software.
+          </p>
+        </section>
+        <section>
+          <h2>Security Logging and Monitoring Failures</h2>
+          <p>
+            Successful logging and monitoring can help you detect hinder timely
+            and response to security incidents
+          </p>
+        </section>
+        <section>
+          <h2>Server Side Request Forgery (SSRF)</h2>
+          <p>
+            It is important to limit the execution of unsafe requests at the
+            server settings level when developing applications.
+          </p>
+        </section>
+        <section><h2>Thank you</h2></section>
+      </div>
+    </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
